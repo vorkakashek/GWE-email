@@ -1,0 +1,229 @@
+// These are the styles to make some of the templates look extra nice.
+// Feel free to remove these styles for production!
+
+// Body Styles 
+body,
+html,
+.body {
+    background: #080d0e !important;
+    color: #fff;
+    letter-spacing: .05rem;
+}
+
+
+.container.header {
+    background: #131F22;
+}
+
+.body-drip {
+    border-top: 8px solid #663399;
+}
+
+// Full Width Headers
+.header {
+    background: #8a8a8a;
+}
+
+.header .columns {
+    padding-bottom: 0;
+}
+
+.header p {
+    color: #fff;
+    padding-top: 15px;
+}
+
+.header .wrapper-inner {
+    padding: 20px;
+}
+
+.header .container {
+    background: transparent;
+}
+
+// Social Media
+table.button.facebook table td {
+    background: #3B5998 !important;
+    border-color: #3B5998;
+}
+
+table.button.twitter table td {
+    background: #1daced !important;
+    border-color: #1daced;
+}
+
+table.button.google table td {
+    background: #DB4A39 !important;
+    border-color: #DB4A39;
+}
+
+.wrapper.secondary {
+    background: #f3f3f3;
+}
+
+
+// My styles
+
+.image-cover {
+    object-fit: cover;
+    object-position: bottom;
+    min-height: 250px;
+}
+
+table.container.mail {
+    background: #131F22;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+
+    img {
+        // height: 100%;
+        width: 120px;
+        // width: 2;
+    }
+
+
+}
+
+.logo-wrap {
+    @media only screen and (max-width: #{$global-breakpoint}) {
+        th {
+            text-align: center !important;
+            img {
+                height: 80px;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+.social {
+    // display: flex;
+    // align-items: center;
+    vertical-align: middle;
+
+    a {
+        vertical-align: middle;
+        display: inline-block;
+        width: 37px;
+        height: 37px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+        th {
+            text-align: center;
+        }
+    }
+}
+
+.header-btn-wrap {
+    vertical-align: middle;
+}
+
+.mail-content {
+    margin-top: 20px;
+
+    img {
+        border-radius: 10px;
+    }
+
+    &.first {
+        margin-top: -100px;
+    }
+
+    &.mobile-reverse {
+        @media only screen and (max-width: #{$global-breakpoint}) {
+            transform: rotate(180deg);
+
+            .columns {
+                transform: rotate(-180deg);
+            }
+
+        }
+    }
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+        * {
+            text-align: center !important;
+        }
+
+        .content-image {
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+.subtitle {
+    font-size: 24px;
+}
+
+.button-outlined {
+    border-radius: 8px;
+    border: 1px solid #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+    color: #fff !important;
+    background-color: rgba(255, 255, 255, .08);
+}
+
+.title {
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    margin-bottom: 20px;
+
+    span {
+        &.pink {
+            color: #FE007A;
+            text-shadow: 0px 3px 11px #FE007A, 0px -3px 15px #FE007A;
+
+        }
+
+        &.blue {
+            font-size: $global-font-size * 2;
+            color: #32CDEF;
+            text-shadow: 0px 3px 11px #32CDEF, 0px -3px 15px #32CDEF;
+        }
+    }
+}
+
+.button-filled {
+    background: #1babcb;
+    background: linear-gradient(90deg, #31CCEF 0%, #1787ED 100%);
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: .1rem;
+    color: #fff !important;
+    padding: 15px 35px;
+    font-size: 15px;
+    border-radius: 12px;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.unsub {
+    opacity: .5;
+    color: #fff !important;
+    font-size: 14px;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+}

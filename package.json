@@ -1,0 +1,19 @@
+{
+  "name": "gwe-email",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vorkakashek/GWE-email.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vorkakashek/GWE-email/issues"
+  },
+  "homepage": "https://github.com/vorkakashek/GWE-email#readme"
+}
