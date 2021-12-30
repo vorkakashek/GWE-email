@@ -94,6 +94,7 @@ table.container.mail {
             img {
                 height: 80px;
                 max-width: 100%;
+                object-fit: contain;
             }
         }
     }
@@ -109,6 +110,7 @@ table.container.mail {
         display: inline-block;
         width: 37px;
         height: 37px;
+        margin: 0 4px;
 
         img {
             width: 100%;
@@ -119,7 +121,7 @@ table.container.mail {
 
     @media only screen and (max-width: #{$global-breakpoint}) {
         th {
-            text-align: center;
+            text-align: center !important;
         }
     }
 }
